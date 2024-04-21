@@ -35,10 +35,10 @@ jobs:
       id: sync
       uses: aormsby/Fork-Sync-With-Upstream-action@v3.4.1
       with:
-        target_sync_branch: my-branch
+        target_sync_branch: main-sync
         # REQUIRED 'target_repo_token' exactly like this!
         target_repo_token: ${{ secrets.GITHUB_TOKEN }}
-        upstream_sync_branch: main-sync
+        upstream_sync_branch: main
         upstream_sync_repo: cmliu/edgetunnel
         upstream_repo_access_token: ${{ secrets.UPSTREAM_REPO_SECRET }}
 
